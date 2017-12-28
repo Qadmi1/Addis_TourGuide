@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Addis_TourGuide</string>
+
+    <string name="home">Home</string>
+
+    <string name="landmarks">Land Marks</string>
+
+    <string name="restaurants">Restaurants</string>
+
+    <string name="historic">Historic Sites</string>
+
+    <string name="events">Events</string>
+    
+    <string name="menelik">The Mausoleum of Menelik II</string>
+    
+    <string name="meskel">Meskel Square</string>
+    
+    <string name="menelik_square">Menelik II Square</string>
+    
+    <string name="bob">Statue of Bob Marley</string>
+    
+    <string name="anwar">Anwar Mosque</string>
+
+    <string name="yekatit">Yekatit 12 Martyrs Square</string>
+
+    <string name="meyazia">Meyazia 27 Square Monument</string>
+
+    <string name="karls">Karls Square</string>
+    
+    <string name="twedros">Tewodros Square</string>
+</resources>
