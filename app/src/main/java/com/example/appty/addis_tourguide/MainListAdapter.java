@@ -10,18 +10,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by appty on 26/12/17.
  */
 
-public class MainListAdapter extends ArrayAdapter<Place> {
+public class MainListAdapter extends ArrayAdapter<PlaceMain> {
 
-    public MainListAdapter(Context context, ArrayList<Place> list) {
+    public MainListAdapter(Context context, ArrayList<PlaceMain> list) {
         super(context, 0, list);
     }
 
@@ -36,13 +33,17 @@ public class MainListAdapter extends ArrayAdapter<Place> {
                     R.layout.main_item, parent, false);
         }
 
-        Place currentItem = getItem(position);
+        // Create a PlaceDetail object and assign the current item in the ListView to it
+        PlaceMain currentItem = getItem(position);
 
-        ImageView mainImg = listItemView.findViewById(R.id.image_main);
-        mainImg.setImageResource(currentItem.getmImageResource());
+        // Make sure the currentItem in the ListView is not null
+        if (currentItem != null) {
+            ImageView mainImg = listItemView.findViewById(R.id.image_main);
+            mainImg.setImageResource(currentItem.getmImageResource());
 
-        TextView textMain = listItemView.findViewById(R.id.text_main);
-        textMain.setText(currentItem.getmName());
+            TextView textMain = listItemView.findViewById(R.id.text_main);
+            textMain.setText(currentItem.getmName());
+        }
         return listItemView;
     }
 }

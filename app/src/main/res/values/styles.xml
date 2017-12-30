@@ -16,4 +16,38 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <!-- Style for the text in the main list. -->
+    <style name="detail_image">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/image_detail_height</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bob_marley</item>
+    </style>
+
+    <!-- Style for the title in the detail list. -->
+    <style name="detail_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Style for the description in the main list. -->
+    <style name="detail_disc">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+   <style name="detail_address_dial">
+       <item name="android:layout_width">0dp</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:textAppearance">?android:textAppearanceSmall</item>
+       <item name="android:textColor">@color/black</item>
+       <item name="android:paddingLeft">8dp</item>
+       <item name="android:layout_gravity">center_vertical</item>
+   </style>
 </resources>

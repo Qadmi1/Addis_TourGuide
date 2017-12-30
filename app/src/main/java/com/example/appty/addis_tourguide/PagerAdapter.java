@@ -9,12 +9,12 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by appty on 26/12/17.
  */
 
-public class PagesAdapter extends FragmentPagerAdapter {
+public class PagerAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
 
 
-    public PagesAdapter(Context context, FragmentManager fm) {
+    public PagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
